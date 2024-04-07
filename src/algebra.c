@@ -1,4 +1,4 @@
-#include "algebra.h"
+#include "../inc/algebra.h"
 #include <stdio.h>
 #include <math.h>
 
