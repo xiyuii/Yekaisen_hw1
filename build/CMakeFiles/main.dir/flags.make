@@ -4,7 +4,7 @@
 # compile C with D:/Software/mingw64/bin/gcc.exe
 C_DEFINES = 
 
-C_INCLUDES = @CMakeFiles/Executable.dir/includes_C.rsp
+C_INCLUDES = @CMakeFiles/main.dir/includes_C.rsp
 
-C_FLAGS = -std=gnu99
+C_FLAGS = 
 

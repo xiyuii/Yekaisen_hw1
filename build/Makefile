@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Executable
+# Target rules for targets named main
 
 # Build rule for target.
-Executable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Executable
-.PHONY : Executable
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-Executable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/build
-.PHONY : Executable/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 src/algebra.obj: src/algebra.c.obj
 .PHONY : src/algebra.obj
 
 # target to build an object file
 src/algebra.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/algebra.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/algebra.c.obj
 .PHONY : src/algebra.c.obj
 
 src/algebra.i: src/algebra.c.i
@@ -141,7 +141,7 @@ src/algebra.i: src/algebra.c.i
 
 # target to preprocess a source file
 src/algebra.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/algebra.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/algebra.c.i
 .PHONY : src/algebra.c.i
 
 src/algebra.s: src/algebra.c.s
@@ -149,7 +149,7 @@ src/algebra.s: src/algebra.c.s
 
 # target to generate assembly for a file
 src/algebra.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/algebra.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/algebra.c.s
 .PHONY : src/algebra.c.s
 
 src/main.obj: src/main.c.obj
@@ -157,7 +157,7 @@ src/main.obj: src/main.c.obj
 
 # target to build an object file
 src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.c.obj
 .PHONY : src/main.c.obj
 
 src/main.i: src/main.c.i
@@ -165,7 +165,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -173,7 +173,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Executable.dir\build.make CMakeFiles/Executable.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 # Help Target
@@ -184,7 +184,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Executable
+	@echo ... main
 	@echo ... src/algebra.obj
 	@echo ... src/algebra.i
 	@echo ... src/algebra.s
