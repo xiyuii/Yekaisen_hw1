@@ -65,7 +65,10 @@ Matrix scale_matrix(Matrix a, double k)
     Matrix result = create_matrix(a.rows, a.cols);   
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.cols; j++) {
-            result.data[i][j] = a.data[i][j] * k;
+            result.data[i][j] = 0; // 初始化结果矩阵的当前元素
+            for (int k = 0; k < a.cols; k++) {
+                result.data[i][j] = a.data[i][j] * k;
+            }
         }
     }
     return result;
