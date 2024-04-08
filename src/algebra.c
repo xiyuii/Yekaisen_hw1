@@ -76,8 +76,15 @@ Matrix scale_matrix(Matrix a, double k)
 
 Matrix transpose_matrix(Matrix a)
 {
-    // ToDo
-    return create_matrix(0, 0);
+    //规模转置
+    Matrix result = create_matrix(a.cols, a.rows);
+
+    for (int i = 0; i < a.rows; i++) {
+        for (int j = 0; j < a.cols; j++) {
+            result.data[j][i] = a.data[i][j]; // 交换行列索引进行转置
+        }
+    }
+    return result;
 }
 
 double det_matrix(Matrix a)
