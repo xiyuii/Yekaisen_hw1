@@ -158,7 +158,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Liner_Algebra
+CMAKE_PROJECT_NAME:STATIC=main
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/Software/mingw64/bin/ranlib.exe
@@ -257,6 +257,15 @@ Liner_Algebra_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Liner_Algebra_SOURCE_DIR:STATIC=C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/build
+
+//Value Computed by CMake
+main_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1
 
 
 ########################
