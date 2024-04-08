@@ -1,5 +1,5 @@
 #设置项目名称与版本要求
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 2.8.12)
 project(Liner_Algebra)
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -9,4 +9,3 @@ include_directories(include())
 
 #添加可执行文件
 add_executable(main ${SRC_LIST})
-
