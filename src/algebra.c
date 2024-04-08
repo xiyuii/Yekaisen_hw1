@@ -62,12 +62,13 @@ Matrix mul_matrix(Matrix a, Matrix b)
 
 Matrix scale_matrix(Matrix a, double k)
 {   
+    Matrix result = create_matrix(a.rows, a.cols);   
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.cols; j++) {
-                a.data[i][j] = a.data[i][j] * k;
+            result.data[i][j] = a.data[i][j] * k;
         }
     }
-    return a;
+    return result;
 }
 
 Matrix transpose_matrix(Matrix a)
@@ -95,7 +96,8 @@ int rank_matrix(Matrix a)
 }
 
 double trace_matrix(Matrix a)
-{   int trace=0;
+{   /*
+    int trace=0;
     if(a.cols != a.rows){
         printf("Error: The matrix must be a square matrix.\n");
         return 0;
@@ -103,6 +105,7 @@ double trace_matrix(Matrix a)
     for(int i = 0; i < a.cols; i++){
         trace += a.data[i][i];
     }
+    */
     return 0;
 }
 
