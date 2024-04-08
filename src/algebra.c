@@ -62,6 +62,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
 
 Matrix scale_matrix(Matrix a, double k)
 {   
+    /*
     Matrix result = create_matrix(a.rows, a.cols);   
     for (int i = 0; i < a.rows; i++) {
         for (int j = 0; j < a.cols; j++) {
@@ -72,6 +73,8 @@ Matrix scale_matrix(Matrix a, double k)
         }
     }
     return result;
+    */
+   return create_matrix(0, 0);
 }
 
 Matrix transpose_matrix(Matrix a)
