@@ -68,46 +68,46 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/src/algebra.c.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/algebra.c.obj: CMakeFiles/main.dir/includes_C.rsp
-CMakeFiles/main.dir/src/algebra.c.obj: C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/src/algebra.c
-CMakeFiles/main.dir/src/algebra.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/algebra.c.obj"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/algebra.c.obj -MF CMakeFiles\main.dir\src\algebra.c.obj.d -o CMakeFiles\main.dir\src\algebra.c.obj -c C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c
+CMakeFiles/main.dir/src/algebra.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/algebra.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/algebra.obj: C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/src/algebra.c
+CMakeFiles/main.dir/src/algebra.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/algebra.obj"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/algebra.obj -MF CMakeFiles\main.dir\src\algebra.obj.d -o CMakeFiles\main.dir\src\algebra.obj -c C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c
 
-CMakeFiles/main.dir/src/algebra.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/algebra.c.i"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c > CMakeFiles\main.dir\src\algebra.c.i
+CMakeFiles/main.dir/src/algebra.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/algebra.i"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c > CMakeFiles\main.dir\src\algebra.i
 
-CMakeFiles/main.dir/src/algebra.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/algebra.c.s"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c -o CMakeFiles\main.dir\src\algebra.c.s
+CMakeFiles/main.dir/src/algebra.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/algebra.s"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\algebra.c -o CMakeFiles\main.dir\src\algebra.s
 
-CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/includes_C.rsp
-CMakeFiles/main.dir/src/main.c.obj: C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/src/main.c
-CMakeFiles/main.dir/src/main.c.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/main.c.obj"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.obj -MF CMakeFiles\main.dir\src\main.c.obj.d -o CMakeFiles\main.dir\src\main.c.obj -c C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c
+CMakeFiles/main.dir/src/main.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/main.obj: CMakeFiles/main.dir/includes_C.rsp
+CMakeFiles/main.dir/src/main.obj: C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/src/main.c
+CMakeFiles/main.dir/src/main.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/main.obj"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.obj -MF CMakeFiles\main.dir\src\main.obj.d -o CMakeFiles\main.dir\src\main.obj -c C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c
 
-CMakeFiles/main.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c > CMakeFiles\main.dir\src\main.c.i
+CMakeFiles/main.dir/src/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/main.i"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c > CMakeFiles\main.dir\src\main.i
 
-CMakeFiles/main.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
-	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c -o CMakeFiles\main.dir\src\main.c.s
+CMakeFiles/main.dir/src/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.s"
+	D:\Software\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\Desktop\hw1\Yekaisen_hw1\src\main.c -o CMakeFiles\main.dir\src\main.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/algebra.c.obj" \
-"CMakeFiles/main.dir/src/main.c.obj"
+"CMakeFiles/main.dir/src/algebra.obj" \
+"CMakeFiles/main.dir/src/main.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/src/algebra.c.obj
-C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/src/main.c.obj
+C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/src/algebra.obj
+C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/src/main.obj
 C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/build.make
 C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/linkLibs.rsp
 C:/Users/Administrator/Desktop/hw1/Yekaisen_hw1/bin/main.exe: CMakeFiles/main.dir/objects1.rsp
