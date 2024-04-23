@@ -118,7 +118,7 @@ double det_matrix(Matrix a)
         Det += sign * a.data[i][0] * det_matrix(remain_det);
         sign = -sign; //-1的幂
     } 
-    return 0;
+    return Det;
 }
 
 
