@@ -75,6 +75,15 @@ Matrix inv_matrix(Matrix a);
  * @param a 矩阵a
  * @return a的秩
 */
+
+Matrix adjugate_matrix(Matrix a);
+
+/**
+ * @brief 伴随矩阵
+ * @param a 矩阵a
+ * @return 伴随矩阵
+*/
+
 int rank_matrix(Matrix a);
 
 /**
