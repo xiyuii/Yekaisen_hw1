@@ -11,6 +11,4 @@ CMakeFiles/main.dir/src/algebra.obj: \
  D:/Software/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  D:/Software/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  D:/Software/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
- D:/Software/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- D:/Software/mingw64/x86_64-w64-mingw32/include/math.h \
- D:/Software/mingw64/x86_64-w64-mingw32/include/crtdefs.h
+ D:/Software/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h

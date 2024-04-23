@@ -1,6 +1,5 @@
 #include "../inc/algebra.h"
 #include <stdio.h>
-#include <math.h>
 
 Matrix create_matrix(int row, int col)
 {
@@ -178,17 +177,17 @@ Matrix adjugate_matrix(Matrix a) {
 
 
 int rank_matrix(Matrix a) {
-    int rank = fmin(a.rows, a.cols); // Initialize rank to the minimum of rows and columns
+    int rank = ((a.rows<a.cols) ? a.rows : a.cols); // r<=min(rows,cols)
     int i, j, k;
 
     for (i = 0, j = 0; j < a.cols && i < a.rows; j++) {
-        // Step a: Check if the current diagonal element is zero
-        if (fabs(a.data[i][j]) < 1e-8) {
-            // Step c: Find a non-zero element in the column below the diagonal element
+        // Step a: 检查aii是否为0
+        if (a.data[i][j] < 1e-8 && a.data[i][j] > -1e-8) {
+            // Step c: 寻找零元素
             int non_zero_found = 0;
             for (k = i + 1; k < a.rows; k++) {
-                if (fabs(a.data[k][j]) > 1e-8) {
-                    // Swap the current row with the row containing the non-zero element
+                if (a.data[k][j] > 1e-8 || a.data[k][j] < -1e-8) {
+                    // 交换非零行
                     for (int l = 0; l < a.cols; l++) {
                         double temp = a.data[i][l];
                         a.data[i][l] = a.data[k][l];
@@ -199,21 +198,21 @@ int rank_matrix(Matrix a) {
                 }
             }
 
-            // If no non-zero element was found and all elements below are zero
+            // 无非零元素，下面全0
             if (!non_zero_found) {
-                rank--; // Decrease rank
-                continue; // Move to the next column
+                rank--; // 减少r
+                continue; // 下一列
             }
         }
 
-        // Step b: Make all elements below the diagonal element zero
+        // Step b: 对角线下方全0
         for (k = i + 1; k < a.rows; k++) {
             double factor = a.data[k][j] / a.data[i][j];
             for (int l = j; l < a.cols; l++) {
                 a.data[k][l] -= a.data[i][l] * factor;
             }
         }
-        i++; // Move to the next row for the next diagonal element
+        i++; // 下一行对角线元素
     }
 
     return rank;
