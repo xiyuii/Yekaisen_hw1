@@ -86,39 +86,39 @@ Matrix transpose_matrix(Matrix a)
     return result;
 }
 
-double det_matrix(Matrix a)
-{   
-    // 非方阵报错
+double det_matrix(Matrix a) {
+    // 首先检查矩阵是否为方阵
     if (a.rows != a.cols) {
         printf("Error: The matrix must be a square matrix.\n");
         return 0;
     }
-    // 一维行列式
+
+    // 对于1x1的矩阵，行列式就是该元素本身
     if (a.rows == 1) {
         return a.data[0][0];
     }
-    // 二维行列式
-    if (a.rows == 2) {
-        return (a.data[0][0]*a.data[1][1]-a.data[0][1]*a.data[1][0]);
-    }
-    double Det = 0;
-    int sign = 1;
-    for(int i = 0; i <a.rows; i++){
-        //代数余子式矩阵
-        Matrix remain_det = create_matrix(a.rows - 1, a.cols - 1);
 
+    double determinant = 0;
+    int sign = 1; // 用于交替加减的符号
+
+    // 对于大于1x1的矩阵，需要递归计算
+    for (int i = 0; i < a.rows; i++) {
+        // 创建一个子矩阵，排除当前行和列
+        Matrix subMatrix = create_matrix(a.rows - 1, a.cols - 1);
         for (int subRow = 0; subRow < a.rows - 1; subRow++) {
             for (int subCol = 0; subCol < a.cols - 1; subCol++) {
                 int row = subRow < i ? subRow : subRow + 1;
                 int col = subCol < 0 ? subCol : subCol + 1;
-                remain_det.data[subRow][subCol] = a.data[row][col];
+                subMatrix.data[subRow][subCol] = a.data[row][col];
             }
         }
 
-        Det += sign * a.data[i][0] * det_matrix(remain_det);
-        sign = -sign; //-1的幂
-    } 
-    return Det;
+        // 递归计算子矩阵的行列式
+        determinant += sign * a.data[i][0] * det_matrix(subMatrix);
+        sign = -sign; // 交换符号
+    }
+
+    return determinant;
 }
 
 
